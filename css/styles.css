@@ -72,7 +72,7 @@ line-height: 1.36;
     text-transform: uppercase;
     color: var(--contrast-text-color);
 }
-.button {
+.hero .button {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -102,7 +102,6 @@ line-height: 1.36;
     color: var(--second-text-color);
 }
 .feature .text {
-        font-weight: 400;
         line-height: 1.71;
 }
 
@@ -115,12 +114,42 @@ text-align: center;
 color: var(--second-text-color);
 }
 .team .text{
-        font-weight: 400;
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
 }
 
+/* Новая сраница - Потрфолио */
+/* Кнопки фильтра */
+.filter .button {
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+}
+.filter .button:hover,
+.filter .button:focus {
+    color: var(--contrast-text-color);
+    background-color: var(--accent-color);
+}
+/* Карточки портфолио */
+.cards .link {
+    text-decoration:none;
+}
+.card .title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--second-text-color);
+}
+.card .text {
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--primary-text-color);
+}
 /* Футер */
 .footer {
     background-color: var(--second-bg-color);
@@ -131,7 +160,6 @@ color: var(--second-text-color);
 .contacts-footer .link {
     text-decoration: none;
     font-style: normal;
-    font-weight: 400;
     line-height: 1.71;
     font-style: normal;
     color: var(--primary-text-color);
@@ -139,5 +167,10 @@ color: var(--second-text-color);
 
 .map.link {
         color: var(--contrast-text-color);
+}
+
+.contacts-footer .link:hover,
+.contacts-footer .link:focus {
+    color: var(--accent-color);
 }
 
