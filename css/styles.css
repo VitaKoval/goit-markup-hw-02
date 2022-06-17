@@ -1,6 +1,7 @@
 :root {
 --primary-text-color: #757575;
 --second-text-color: #212121;
+--third-text-color: rgba(255,255,255,0.6);
 --contrast-text-color: #FFFFFF;
 --primary-bg-color: #FFFFFF;
 --second-bg-color: #2F303A;
@@ -18,6 +19,7 @@ font-size: 14px;
 .accent {
     color: var(--accent-color);
 }
+
 
 /* Сбросить маркеты у списков */
 .list {
@@ -55,10 +57,15 @@ color: var(--accent-color);
         color: var(--primary-text-color);
 }
 
-.contacts-nav .link:hover,
-.contacts-nav .link:focus{
-color: var(--accent-color);
+.site-nav .link.current {
+    color: var(--accent-color);
 }
+
+.contacts-nav .link:hover,
+.contacts-nav .link:focus {
+    color: var(--accent-color);
+}
+
 /* Баннер */
 .hero {
     background-color: var(--second-bg-color);
@@ -96,6 +103,7 @@ line-height: 1.36;
 
 /* Особенности */
 .feature .title {
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -162,10 +170,10 @@ color: var(--second-text-color);
     font-style: normal;
     line-height: 1.71;
     font-style: normal;
-    color: var(--primary-text-color);
+    color: var(--third-text-color);
 }
 
-.map.link {
+.contacts-footer .map {
         color: var(--contrast-text-color);
 }
 
@@ -173,4 +181,5 @@ color: var(--second-text-color);
 .contacts-footer .link:focus {
     color: var(--accent-color);
 }
+
 
